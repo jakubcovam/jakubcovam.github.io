@@ -1,47 +1,403 @@
+<!--TODO: Solve contact formular for sending messages --> 
+<!--TODO: Insert dark/light theme --> 
+<!--TODO: Add other sections (Project, Papers, Teaching, Courses, ...) --> 
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="description" content="Jakubcovam.GitHub.io : ">
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    <title>Jakubcovam.GitHub.io</title>
-  </head>
+        <!--==================== UNICONS ====================-->
+        <link href="https://unicons.iconscout.com/release/v4.0.8/css/line.css" rel="stylesheet" >
 
-  <body>
+        <title>Portfolio website complete</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Ing. Michala Jakubcová, Ph.D.</a>
+                </div>
 
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/jakubcovam">View on GitHub</a>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
 
-          <h1 id="project_title">Jakubcovam.GitHub.io</h1>
-          <h2 id="project_tagline"></h2>
-
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
         </header>
-    </div>
 
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a id="welcome-to-my-github-page" class="anchor" href="#welcome-to-my-github-page" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Welcome to my GitHub Page.</h3>
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Hi,<br>I am <span class="home__title-color">Michala</span></h1>
+                    <h2 class="home__subtitle"> Researcher </h2>
+                    <!-- <p class="home__text"> numerical modelling of flow in the atmospheric boundary layer, programming, data analysis and visualization</p> -->
+                    <a href="#contact" class="button">Contact</a>
+                </div>
 
-<p>My name is Michala Jakubcova</p>
-      </section>
-    </div>
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/michala-jakubcov%C3%A1-7b2b7781/" target="_blank" class="home__social-icon"><i class='uil uil-linkedin-alt'></i></a>
+                    <a href="https://www.researchgate.net/profile/Michala-Jakubcova/" target="_blank" class="home__social-icon" ><i class='uil uil-atom' ></i></a>
+                    <a href="https://github.com/jakubcovam/" target="_blank" class="home__social-icon" target="_blank" ><i class='uil uil-github' ></i></a>
+                    <a href="https://www.it.cas.cz/en/michalajakubcova/" target="_blank" class="home__social-icon" ><i class='uil uil-briefcase-alt' ></i></a>
+                </div>
 
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p>Published with <a href="https://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="0" y="-50" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
 
-    
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
 
-  </body>
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/about.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <p class="about__text">I am a Postdoctoral researcher at the <span class="home__title-color">Institute of Thermomechanics</span> of the Czech Academy of Sciences in Prague, Czech Republic. I run numerical simulations of flow in the atmosphere. I also try to predict pullutants in air using machine learning models.</p>  
+                        <p class="about__text">I am also a <span class="home__title-color">teacher</span> of the Flow in Atmospheric Boundary Layer course at the Faculty of Environmental Sciences, Czech University of Life Sciences in Prague. </p>  
+                        <p class="about__text">I am interested in <span class="home__title-color">data analysis</span> and <span class="home__title-color">visualization</span> , <span class="home__title-color">numerical modeling</span> and <span class="home__title-color">machine learning models</span>. </p>            
+                        <p class="about__text">I enjoy working with <span class="home__title-color">Python</span>, <span class="home__title-color">R</span> , <span class="home__title-color">HTML</span>, <span class="home__title-color">LaTeX</span> and <span class="home__title-color">OpenFOAM</span>. </p>            
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <!-- <h2 class="skills__subtitle">Profesional Skills</h2> -->
+                        <p class="skills__text">I like programming in Python and R for analysing and visualization of data. I also know how to work in Matlab, C++, HTML, CSS and a little bit of JavaScript. I love writing documents and presentations in LaTeX, but I also know how to use MS Office. For numerical modelling of flow in the atmosphere, I use OpenFOAM with FreeCAD for creating geometry and ParaView for vizualization of results.</p>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-brackets-curly skills__icon'></i>
+                                <span class="skills__name">Python</span>
+                            </div>
+                            <div class="skills__bar skills__python">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-brackets-curly skills__icon'></i>
+                                <span class="skills__name">R</span>
+                            </div>
+                            <div class="skills__bar skills__r">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-brackets-curly skills__icon'></i>
+                                <span class="skills__name">Matlab</span>
+                            </div>
+                            <div class="skills__bar skills__matlab">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">40%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-brackets-curly skills__icon'></i>
+                                <span class="skills__name">HTML, CSS</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">40%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-edit-alt skills__icon' ></i>
+                                <span class="skills__name">LaTeX</span>
+                            </div>
+                            <div class="skills__bar skills__latex">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-edit-alt skills__icon' ></i>
+                                <span class="skills__name">MS Office</span>
+                            </div>
+                            <div class="skills__bar skills__office">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">75%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='uil uil-wind skills__icon'></i>
+                                <span class="skills__name">OpenFOAM</span>
+                            </div>
+                            <div class="skills__bar skills__of">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work_women.jpg" alt="" class="skills__img">
+                        Image by <a href="https://www.freepik.com/free-photo/top-view-hands-working-with-laptop_1054879.htm#query=woman%20hands%20laptop&position=4&from_view=keyword&track=ais&uuid=6b2af42c-2436-48ea-9ede-320348c87d39" target="_blank" >Freepik</a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== EDUCATION ====================-->
+            <section class="qualification section" id="education">
+                <h2 class="section-title">Education</h2>
+
+                <div class="qualification__container bd-grid">          
+                    <div>
+                        <p class="qualification__text">I obtained my Ph.D. in 2015 at the Czech University of Life Sciences, Prague. The topic of my dissertation thesis was <i>Application of Optimization Methods in Hydrological Modelling </i>. During my studies, I spent 10 months at the Wageningen University in Netherlands studying the first year of the Earth and Environment MSc. study program.</p>
+
+                        <!--==================== EDUCATION 1 ====================-->
+                        <div class="qualification__data">
+                            
+                            <div>
+                                <h3 class="qualification__title"><b>Ph.D.</b>, Environmental Modeling</h3>
+                                <span class="qualification__subtitle">Faculty of Environmental Sciences, Czech University of Life Sciences, Prague, Czech Republic</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2011 - 2015
+                                </div>
+                            </div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                        </div> 
+
+                        <!--==================== EDUCATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title"><b>Erasmus study</b>, Earth and Environment</h3>
+                                <span class="qualification__subtitle">Wageningen University, Netherlands</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2013 - 2014
+                                </div>
+                            </div>  
+                            
+                        </div>
+
+                        <!--==================== EDUCATION 3 ====================-->
+                        <div class="qualification__data">
+                            
+                            <div>
+                                <h3 class="qualification__title"><b>Ing.</b>, Environmental Modeling</h3>
+                                <span class="qualification__subtitle">Faculty of Environmental Sciences, Czech University of Life Sciences, Prague, Czech Republic</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2009 - 2011
+                                </div>
+                            </div>  
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== EDUCATION 4 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!-- <span class="qualification__line"></span> -->
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title"><b>Bc.</b>, Applied Ecology</h3>
+                                <span class="qualification__subtitle">Faculty of Environmental Sciences, Czech University of Life Sciences, Prague, Czech Republic</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2006 - 2009
+                                </div>
+                            </div>  
+                        </div>
+
+                    </div>
+                </div>
+                    
+            </section>
+
+            <!--==================== WORK ====================-->
+            <section class="qualification section" id="work">    
+                <h2 class="section-title">Work Experience</h2>
+
+                <div class="qualification__container bd-grid">          
+                    <div>
+                        <p class="qualification__text">Since 2014, I am an employee of the <i>Institute of Thermomechanics of the Czech Academy of Sciences</i>. During my Ph.D. studies, I applied for internal grants and I taught many lectures and practicals. I am the main lecturer of the course <i>Flow in Atmospheric Boundary Layer</i> since 2015. I teach this course in English and since 2023 also in Czech language. </p>
+
+                        <!--==================== QUALIFICATION 1 ====================-->
+                        <div class="qualification__data">                           
+                            <div>
+                                <h3 class="qualification__title"><b>Postdoctoral researcher</b></h3>
+                                <span class="qualification__subtitle">Institute of Thermomechanics of the Czech Academy of Sciences, Prague, Czech Republic</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2016 - now
+                                </div>
+                            </div>  
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+                        </div>
+
+                        <!--==================== QUALIFICATION 2 ====================-->
+                        <div class="qualification__data">
+                            <div></div>
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <span class="qualification__line"></span>
+                            </div>
+
+                            <div>
+                                <h3 class="qualification__title"><b>Lecturer</b></h3>
+                                <span class="qualification__subtitle">Faculty of Environmental Sciences, Czech University of Life Sciences, Prague, Czech Republic</span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2015 - now
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!--==================== QUALIFICATION 3 ====================-->
+                        <div class="qualification__data">
+                            
+                            <div>
+                                <h3 class="qualification__title"><b>PhD student</b></h3>
+                                <span class="qualification__subtitle">Institute of Thermomechanics of the Czech Academy of Sciences, Prague, Czech Republic </span>
+                                <div class="qualification__calendar">
+                                    <i class="uil uil-calendar-alt"></i>
+                                    2014 - 2016
+                                </div>
+                            </div>  
+
+                            <div>
+                                <span class="qualification__rounder"></span>
+                                <!--<span class="qualification__line"></span> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <!--  <div class="contact__container bd-grid">
+                   <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div> -->
+                
+                <div class="contact__container bd-grid">
+                    <p class="contact__text">You can reach me via email: </p>
+                    <br>
+                    <div>
+                        <i class="uil uil-envelope-alt"> michala.jakubcova[at]gmail.com</i> 
+                    </div>
+                </div>
+            </section>  
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">Ing. Michala Jakubcová, Ph.D.</p>
+            <div class="footer__social">
+                <a href="https://www.linkedin.com/in/michala-jakubcov%C3%A1-7b2b7781/" target="_blank" class="footer__icon"><i class='uil uil-linkedin-alt'></i></a>
+                <a href="https://www.researchgate.net/profile/Michala-Jakubcova/" target="_blank" class="footer__icon" ><i class='uil uil-atom' ></i></a>
+                <a href="https://github.com/jakubcovam/" target="_blank" class="footer__icon" target="_blank" ><i class='uil uil-github' ></i></a>
+                <a href="https://www.it.cas.cz/en/michalajakubcova/" target="_blank" class="footer__icon" ><i class='uil uil-briefcase-alt' ></i></a>
+            </div>
+            <p class="footer__copy">Based on &#169; Bedimcode. All rigths reserved.</p>
+        </footer>
+
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+
+        <!--===== SEND EMAIL =====-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+    </body>
 </html>
