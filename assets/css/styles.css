@@ -256,7 +256,7 @@ body.dark-theme {
   fill: var(--first-color);
 }
 .home__blob-img {
-  width: 480px;
+  width: 680px;
 }
 
 /*BUTTONS*/
@@ -453,7 +453,9 @@ body.dark-theme {
   cursor: pointer;
   margin-left: auto;
 }
-
+.contact__container {
+  text-align: center;
+}
 /* ===== FOOTER =====*/
 .footer {
   background-color: var(--second-color);
